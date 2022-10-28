@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f0f0f0;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.container {
+  display: flex;
+  width: 600px;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.content {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.content h3 {
+  color: hsl(0, 0%, 100%, 0.75);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.content p {
+  font-size: 15px;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-weight: 400;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  flex-grow: 1;
+}
+.top {
+  background-color: hsl(31, 77%, 52%);
+}
+.middle {
+  background-color: hsl(184, 100%, 22%);
+}
+.bottom {
+  background-color: hsl(179, 100%, 13%);
+}
+.content button {
+  background-color: hsl(0, 0%, 95%);
+  padding: 10px 10px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.top button {
+  color: hsl(31, 77%, 52%);
+}
+.middle button {
+  color: hsl(184, 100%, 22%);
+}
+.bottom button {
+  color: hsl(179, 100%, 13%);
+}
+.content button:hover {
+  background-color: transparent;
+  border: 2px solid hsl(0, 0%, 95%);
+  color: hsl(0, 0%, 95%);
+}
+@media screen and (max-width: 375px) {
+  body {
+    background-color: #f0f0f0;
+    padding: 50px 20px;
+  }
+  .container {
+    flex-direction: column;
+  }
+}
