@@ -1,0 +1,139 @@
+/* CSS RESET */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: cadetblue;
+  background: url(houses.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* LOGIN */
+.login {
+  width: 360px;
+  height: 280px;
+  margin: auto;
+  margin-top: 200px;
+  background-color: white;
+  border-radius: 10px;
+}
+h1 {
+  text-align: center;
+  padding-top: 30px;
+  color: mediumseagreen;
+}
+h4 {
+  text-align: center;
+  color: mediumseagreen;
+}
+form {
+  width: 300px;
+  margin-left: 20px;
+}
+form label {
+  display: flex;
+  margin-top: 18px;
+  font-size: 18px;
+  color: rgb(35, 97, 63);
+}
+form input {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border: 1px solid rgba(128, 128, 128, 0.842);
+  border-radius: 6px;
+  outline: none;
+}
+input[type="button"] {
+  width: 320px;
+  height: 35px;
+  margin-top: 20px;
+  border: none;
+  background-color: mediumseagreen;
+  color: white;
+  font-size: 17px;
+}
+p {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 14px;
+}
+/* REGISTER */
+.register {
+  width: 360px;
+  height: 780px;
+  margin: auto;
+  background-color: white;
+  border-radius: 10px;
+}
+h1 {
+  text-align: center;
+  padding-top: 10px;
+  color: mediumseagreen;
+  font-size: 25px;
+}
+h4 {
+  text-align: center;
+  color: mediumseagreen;
+  font-size: 13px;
+}
+form {
+  width: 300px;
+  margin-left: 20px;
+}
+form label {
+  display: flex;
+  margin-top: 6px;
+  font-size: 15px;
+  color: rgb(35, 97, 63);
+}
+form input {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border: 1px solid rgba(128, 128, 128, 0.842);
+  border-radius: 6px;
+  outline: none;
+}
+input[type="button"] {
+  width: 320px;
+  height: 35px;
+  margin-top: 20px;
+  border: none;
+  background-color: mediumseagreen;
+  color: white;
+  font-size: 17px;
+}
+p {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 14px;
+}
+.p2 {
+  text-align: center;
+  font-size: 15px;
+  margin-top: -10px;
+}
+/* SUCCESS */
+.success {
+  width: 360px;
+  height: 200px;
+  margin: auto;
+  background-color: white;
+  border-radius: 10px;
+}
+.heading {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 180px;
+  font-weight: 600;
+}
+.para {
+  text-align: center;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+}

@@ -1,0 +1,287 @@
+/* CSS RESET */
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  box-sizing: border-box;
+}
+.header {
+  height: 100vh;
+  width: 100%;
+  background-image: url(mac.jpg);
+  background-position: center;
+  background-size: cover;
+  opacity: 0.9;
+}
+nav {
+  display: flex;
+  padding: 2% 6%;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+.nav-links ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: rgb(58, 57, 57);
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+.detail {
+  width: 90%;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.detail h1 {
+  font-size: 70px;
+}
+.detail h3 {
+  font-size: 25px;
+  color: white;
+}
+.detail p {
+  margin: 10px 0 40px;
+  font-size: 20px;
+  color: white;
+}
+.btn1 {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  border: 2px solid #fff;
+  padding: 15px 30px;
+  font-size: 20px;
+  background: transparent;
+  position: relative;
+}
+.btn1:hover {
+  border: 1px solid gray;
+  background: gray;
+  transform: 1s;
+}
+.about {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+.about img {
+  height: 400px;
+  width: 430px;
+  border-radius: 850px;
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+.text {
+  width: 550px;
+}
+.main {
+  width: 1130px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.text h4 {
+  color: black;
+  font-size: 40px;
+}
+.text p {
+  color: black;
+}
+.btn2 {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  border: 2px solid black;
+  padding: 15px 30px;
+  font-size: 20px;
+  background: transparent;
+  position: relative;
+}
+.btn2:hover {
+  border: 1px solid gray;
+  background: gray;
+  transform: 1s;
+}
+
+/*PROJECT AND SERVICE */
+.project{
+  background: rgb(33, 36, 40);
+  width: 100%;
+  padding: 20px 0px;
+}
+.title h2{
+  color: whitesmoke;
+  font-size: 75px;
+  width: 1130px;
+  margin: 30px auto;
+  text-align: center;
+}
+.box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  margin-bottom: 30px;
+}
+.card{
+  height: 365px;
+  width: 335px;
+  padding: 20px 35px;
+  background: url(cinqueterre.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 30px;
+  margin: 20px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+h5{
+  color: white;
+  font-size: 25px;
+  margin-bottom: 25px;
+}
+.para{
+  color: white;
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 70px;
+  font-weight: 900;
+}
+
+/* SERVICES */
+.service{
+  background: white;
+  width: 100%;
+  padding: 20px 0px;
+}
+.title-1 h2{
+  color: black;
+  font-size: 75px;
+  width: 1130px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+/* CONTACT ME */
+.container{
+  background: rgba(49, 50, 53, 0.719);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container form{
+  width: 650px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  border-radius: 15px;
+  background: rgba(184, 184, 184, 0.521);
+  backdrop-filter: blur(10px);
+  flex-wrap: wrap;
+}
+.container form h1{
+  color: white;
+  font-weight: 500;
+  margin-top: 20px;
+  width: 500px;
+  text-align: center;
+}
+.container form h4{
+  color: white;
+  font-weight: 500;
+  margin-top: 20px;
+  width: 500px;
+  text-align: center;
+}
+.container form input{
+  width: 200px;
+  height: 40px;
+  padding-left: 10px;
+  outline: none;
+  border: none;
+  font-size: 15px;
+  margin-bottom: 10px;
+  background: none;
+  border-bottom: 2px solid whitesmoke;
+}
+.container form input::placeholder{
+  color: whitesmoke;
+}
+.container form #lastname,
+.container form #mobile{
+  margin-left: 20px;
+}
+.container form #email,
+.container form #firstname{
+  margin-right: 20px;
+}
+.container form textarea{
+  background: none;
+  border: none;
+  border-bottom: 2px solid whitesmoke;
+  color: whitesmoke;
+  font-weight: 200;
+  font-size: 15px;
+  padding: 10px;
+  outline: none;
+  min-width: 600px;
+  max-width: 600px;
+  min-height: 80px;
+  max-height: 80px;
+}
+textarea::-webkit-scrollbar{
+  width: 0cm;
+}
+.container form #button{
+  border: none;
+  background: whitesmoke;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 22px;
+  color: black;
+  width: 100px;
+  padding: 0;
+  margin-right: 500px;
+  margin-bottom: 30px;
+}
+.container form #button:hover{
+  opacity: 0.6;
+}
+footer{
+  position: relative;
+  width: 100%;
+  height: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
